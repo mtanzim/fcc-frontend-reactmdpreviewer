@@ -22,6 +22,19 @@
   font-size: large;
 }
 
+.CodeTextBox {
+  resize: none;
+  width:100%;
+  min-height: 568px;
+
+}
+
+.PreviewTextBox {
+  width: 100%;
+  resize: none;
+  min-height: 568px;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
