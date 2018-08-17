@@ -1,41 +1,49 @@
-.App {
-  text-align: center;
-}
-
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.jumbotron {
+  text-align: left;
+  /* padding: 20px; */
 }
 
-.App-title {
-  font-size: 1.5em;
+.CodeCardBody {
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
 }
 
-.App-intro {
-  font-size: large;
-}
-
-.CodeTextBox {
+.CodeCardBody textarea {
   resize: none;
-  width:100%;
-  min-height: 568px;
-
+  border: none;
+  cursor: text;
+  box-sizing: border-box;
+  min-height: 560px;
 }
 
-.PreviewTextBox {
-  width: 100%;
-  resize: none;
+.PreviewCardBody {  
   min-height: 568px;
+  overflow: auto;
+  cursor: default;
+}
+
+.card {
+  text-align: left;
+  margin-bottom: 50px;
+  /* min-height: 568px; */
+}
+
+.footer {
+  padding: 10px;
+  text-align: center;
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
