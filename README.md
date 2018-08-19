@@ -15,3 +15,7 @@ Tanzim Mokammel
 [See example here](https://codepen.io/freeCodeCamp/full/GrZVVO)
 
 ## Lessons Learned
+
+- How to use [marked.js](https://github.com/markedjs/marked)
+- Refresher on Bootstrap, and React
+- Running CDN supplied tests on front-end apps
