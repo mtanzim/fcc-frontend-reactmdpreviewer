@@ -9,14 +9,46 @@ class App extends Component {
 
   constructor(props) {
     super(props);
+
+  const mdContent = [    
+
+    '# Welcome',
+    '\n',
+    '## React Markdown Previewer',
+    '\n',
+    '[Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)',
+    '\n',
+    'Here is some es6 code!',
+    "``",
+    "const sayHelloWorld = () => console.log('Hello World');",
+    "``",
+    '\n',
+    'Let me show you blockquotes!',
+    "> Blockquotes are very handy in email to emulate reply text.",
+    '> This line is part of the same quote.',
+    '\n',
+    'Quote break.',
+    'By the way, I obviously copied this from the markdown cheatsheet! :O',
+    '\n',
+    ' > This is a very long line that will still be quoted properly when it wraps.Oh boy let\'s keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote.' ,
+    '\n',
+    "*Now,* here is an **amazing** image!!, Also copied :O :O; DRY am I right?",
+    "- but first, let me tell you why it's amazing!",
+    "\t - Because I said so :P",
+    "\t\t - Great things will happen if you listen to me!",
+    '\n',
+    'Finally, the image is below:',
+    '![React Logo w/ Text](https://goo.gl/Umyytc)'
+  ].join('\n');
+
+
     this.state = {
-      mdCode: '# Welcome!\nType in *markdown* in the box to the **left**.\n[Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). ',
+      mdCode: mdContent,
     }
   }
 
   handleChangeCode = (event) => {
     this.setState({ mdCode: event.target.value });
-    // console.log(this.state.mdCode);
   }
 
   render() {

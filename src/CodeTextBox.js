@@ -9,7 +9,7 @@ const CodeTextBox = ({handleChangeCode, initVal}) => (
         Type in Markdown here
       </div>
       <div className="card-body CodeCardBody">
-        <textarea placeholder={initVal} onChange={handleChangeCode} id="editor" className="">
+        <textarea onChange={handleChangeCode} value={initVal} id="editor" className="">
         </textarea>
       </div>
     </div>
